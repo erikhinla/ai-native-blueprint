@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI-Native Infrastructure Blueprint</title>
-    <meta name="description" content="A comprehensive blueprint for AI-native infrastructure — from foundational compute to intelligent orchestration." />
+    <meta name="description" content="AI-Native Infrastructure Blueprint — The Biological Stack, Data Flow Architecture, and the Asset Generator Flywheel." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -16,86 +16,98 @@
       <div class="hero-inner">
         <p class="hero-eyebrow">Infrastructure Blueprint</p>
         <h1 class="hero-title">AI-Native Infrastructure</h1>
-        <p class="hero-subtitle">From foundational compute to intelligent orchestration — a comprehensive blueprint for building infrastructure that thinks.</p>
+        <p class="hero-subtitle">The biological stack that powers modern AI-native businesses — from voice capture to closed deals, orchestrated end to end.</p>
       </div>
     </header>
 
-    <!-- ═══════════════════════════════════════════ PILLARS ═══════════════════════════════════════════ -->
-    <section class="section fade-up" id="pillars">
-      <h2 class="section-title">The Four Pillars</h2>
-      <p class="section-lead">Every AI-native stack rests on four foundational pillars. Each one is indispensable — remove any single pillar and the system collapses.</p>
+    <!-- ═══════════════════════════════════════════ 01. THE BIOLOGICAL STACK ═══════════════════════════════════════════ -->
+    <section class="section fade-up" id="biological-stack">
+      <h2 class="section-title">01. The Biological Stack</h2>
+      <p class="section-lead">Four layers working in concert — each one alive, adaptive, and essential. Remove any single layer and the organism fails.</p>
       <div class="grid grid-4">
         <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3 class="card-title">Compute Fabric</h3>
-          <p class="card-text">GPU clusters, TPU pods, and elastic scaling that adapts to workload demands in real time. The raw power behind every inference call.</p>
+          <div class="card-icon">📞</div>
+          <h3 class="card-title">Vapi / Tally</h3>
+          <p class="card-label">Capture Layer</p>
+          <p class="card-text">Voice agents and smart forms that capture intent at the point of contact. Every conversation becomes structured data before it hits the pipeline.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🗄️</div>
-          <h3 class="card-title">Data Layer</h3>
-          <p class="card-text">Vector databases, feature stores, and streaming pipelines that keep data fresh, indexed, and ready for sub-millisecond retrieval.</p>
+          <div class="card-icon">⚙️</div>
+          <h3 class="card-title">Make.com</h3>
+          <p class="card-label">Orchestration Layer</p>
+          <p class="card-text">The nervous system. Scenarios route data between tools, trigger workflows, and keep every system in sync — without writing code.</p>
         </div>
         <div class="card">
           <div class="card-icon">🧠</div>
-          <h3 class="card-title">Model Runtime</h3>
-          <p class="card-text">Serving infrastructure for LLMs and specialized models — batching, quantization, and multi-model routing at production scale.</p>
+          <h3 class="card-title">OpenAI API</h3>
+          <p class="card-label">Intelligence Layer</p>
+          <p class="card-text">GPT-4 processes, classifies, and generates. From summarizing calls to drafting proposals — the reasoning engine behind every decision.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🔗</div>
-          <h3 class="card-title">Orchestration</h3>
-          <p class="card-text">Agent frameworks, tool-calling protocols, and workflow engines that chain models into reliable, observable, multi-step systems.</p>
+          <div class="card-icon">🗂️</div>
+          <h3 class="card-title">Attio / Airtable</h3>
+          <p class="card-label">Memory Layer</p>
+          <p class="card-text">CRM and structured databases that remember everything. Contacts, deals, interactions — all indexed, searchable, and ready for the next action.</p>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════ ARCHITECTURE DIAGRAM ═══════════════════════════════════════════ -->
-    <section class="section fade-up" id="architecture">
-      <h2 class="section-title">Architecture Overview</h2>
-      <p class="section-lead">A layered view of the AI-native stack — from user-facing agents down to the bare-metal compute that powers them.</p>
+    <!-- ═══════════════════════════════════════════ 02. DATA FLOW ARCHITECTURE ═══════════════════════════════════════════ -->
+    <section class="section fade-up" id="data-flow">
+      <h2 class="section-title">02. Data Flow Architecture</h2>
+      <p class="section-lead">How data moves through the biological stack — from first contact to closed deal, every handoff is automated and traceable.</p>
       <div class="diagram-container">
         <div class="mermaid">
 graph TD
-    A["🌐 User / API Gateway"] --> B["🤖 Agent Orchestrator"]
-    B --> C["🧠 Model Router"]
-    B --> D["🔧 Tool Registry"]
-    C --> E["⚡ LLM Serving Cluster"]
-    C --> F["🎯 Specialized Models"]
-    D --> G["🗄️ Vector Store"]
-    D --> H["📊 Feature Store"]
-    E --> I["🖥️ GPU Compute Fabric"]
-    F --> I
-    G --> J["💾 Storage Layer"]
+    A["📞 Inbound Call / Form"] -->|"Vapi / Tally"| B["⚙️ Make.com Router"]
+    B -->|"Classify Intent"| C["🧠 OpenAI API"]
+    C -->|"Enriched Data"| B
+    B -->|"New Lead"| D["🗂️ Attio CRM"]
+    B -->|"Existing Contact"| E["📋 Airtable Ops DB"]
+    B -->|"Generate Asset"| F["📝 Content Pipeline"]
+    D -->|"Deal Created"| G["💰 Pipeline Tracker"]
+    E -->|"Task Assigned"| H["✅ Fulfillment Queue"]
+    F -->|"Draft Ready"| I["📤 Delivery / Publish"]
+    G --> J["📊 Dashboard"]
     H --> J
-    I --> K["☁️ Cloud / Bare Metal"]
-    J --> K
+    I --> J
 
-    classDef default fill:#1A1A1A,stroke:#333,color:#E5E5E5,stroke-width:1px
-    classDef accent fill:#1a2a3d,stroke:#4A90E2,color:#E5E5E5,stroke-width:2px
-    classDef gold fill:#2a2418,stroke:#C8A96A,color:#E5E5E5,stroke-width:2px
+    classDef capture fill:#1a2a3d,stroke:#4A90E2,color:#E5E5E5,stroke-width:2px
+    classDef orchestration fill:#1A1A1A,stroke:#C8A96A,color:#E5E5E5,stroke-width:2px
+    classDef intelligence fill:#2a1a2a,stroke:#9B59B6,color:#E5E5E5,stroke-width:2px
+    classDef memory fill:#1a2a1a,stroke:#27AE60,color:#E5E5E5,stroke-width:2px
+    classDef output fill:#2a2418,stroke:#C8A96A,color:#E5E5E5,stroke-width:2px
 
-    class A,B accent
-    class E,F,I gold
+    class A capture
+    class B orchestration
+    class C intelligence
+    class D,E memory
+    class F,G,H,I,J output
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════ FLYWHEEL ═══════════════════════════════════════════ -->
+    <!-- ═══════════════════════════════════════════ 03. THE ASSET GENERATOR (FLYWHEEL) ═══════════════════════════════════════════ -->
     <section class="section fade-up" id="flywheel">
-      <h2 class="section-title">The AI Flywheel</h2>
-      <p class="section-lead">AI-native infrastructure creates a self-reinforcing cycle — each component accelerates the others.</p>
+      <h2 class="section-title">03. The Asset Generator (Flywheel)</h2>
+      <p class="section-lead">Two modes of operation — the Owner's Manual for building the machine, and the Operating System for running it. The flywheel spins faster with every cycle.</p>
       <div class="flywheel-grid">
         <div class="flywheel-col">
-          <div class="card">
-            <h3 class="card-title">1. Data Ingestion</h3>
-            <p class="card-text">Raw data flows in from APIs, events, and user interactions. Pipelines clean, embed, and index it in real time.</p>
+          <div class="flywheel-header">
+            <h3 class="flywheel-heading">Owner's Manual</h3>
+            <p class="flywheel-subheading">Build the Machine</p>
           </div>
           <div class="card">
-            <h3 class="card-title">2. Model Training</h3>
-            <p class="card-text">Fine-tuning loops consume curated datasets. Experiment tracking and versioning keep every run reproducible.</p>
+            <h4 class="card-title">1. Capture</h4>
+            <p class="card-text">Every call, form submission, and interaction is recorded and structured. Nothing falls through the cracks.</p>
           </div>
           <div class="card">
-            <h3 class="card-title">3. Serving &amp; Inference</h3>
-            <p class="card-text">Optimized runtimes deliver predictions at scale. A/B routing and canary deploys ensure safe rollouts.</p>
+            <h4 class="card-title">2. Process</h4>
+            <p class="card-text">AI classifies intent, extracts key data, and routes it to the right workflow — instantly, without human bottlenecks.</p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">3. Store</h4>
+            <p class="card-text">Enriched records land in your CRM and ops database. Every contact, deal, and task is indexed and searchable.</p>
           </div>
         </div>
         <div class="flywheel-divider">
@@ -104,109 +116,22 @@ graph TD
           <div class="divider-line"></div>
         </div>
         <div class="flywheel-col">
-          <div class="card">
-            <h3 class="card-title">4. Feedback Collection</h3>
-            <p class="card-text">User signals, RLHF annotations, and automated evals feed back into the data layer for continuous improvement.</p>
+          <div class="flywheel-header">
+            <h3 class="flywheel-heading">Operating System</h3>
+            <p class="flywheel-subheading">Run the Machine</p>
           </div>
           <div class="card">
-            <h3 class="card-title">5. Optimization</h3>
-            <p class="card-text">Cost-aware autoscaling, model distillation, and caching reduce latency and spend without sacrificing quality.</p>
+            <h4 class="card-title">4. Generate</h4>
+            <p class="card-text">Content, proposals, and deliverables are drafted automatically from templates and AI — ready for review in minutes.</p>
           </div>
           <div class="card">
-            <h3 class="card-title">6. Iteration</h3>
-            <p class="card-text">Each cycle produces better models, faster pipelines, and richer data — compounding advantages over time.</p>
+            <h4 class="card-title">5. Deliver</h4>
+            <p class="card-text">Assets are routed to clients, published to channels, or queued for fulfillment — on schedule, every time.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ STACK TABLE ═══════════════════════════════════════════ -->
-    <section class="section fade-up" id="stack">
-      <h2 class="section-title">Reference Stack</h2>
-      <p class="section-lead">A curated selection of tools and platforms across each layer of the AI-native stack.</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Layer</th>
-              <th>Category</th>
-              <th>Tools &amp; Platforms</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Compute</td>
-              <td>GPU / TPU</td>
-              <td>NVIDIA H100, Google TPU v5, AWS Trainium</td>
-            </tr>
-            <tr>
-              <td>Compute</td>
-              <td>Orchestration</td>
-              <td>Kubernetes, Ray, Slurm</td>
-            </tr>
-            <tr>
-              <td>Data</td>
-              <td>Vector DB</td>
-              <td>Pinecone, Weaviate, Qdrant, pgvector</td>
-            </tr>
-            <tr>
-              <td>Data</td>
-              <td>Streaming</td>
-              <td>Kafka, Flink, Redpanda</td>
-            </tr>
-            <tr>
-              <td>Model</td>
-              <td>Serving</td>
-              <td>vLLM, TensorRT-LLM, Triton</td>
-            </tr>
-            <tr>
-              <td>Model</td>
-              <td>Training</td>
-              <td>PyTorch, JAX, DeepSpeed</td>
-            </tr>
-            <tr>
-              <td>Agent</td>
-              <td>Frameworks</td>
-              <td>LangChain, CrewAI, AutoGen</td>
-            </tr>
-            <tr>
-              <td>Agent</td>
-              <td>Observability</td>
-              <td>LangSmith, Arize, Weights &amp; Biases</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ PRINCIPLES ═══════════════════════════════════════════ -->
-    <section class="section fade-up" id="principles">
-      <h2 class="section-title">Design Principles</h2>
-      <p class="section-lead">The non-negotiable principles that guide every architectural decision in an AI-native system.</p>
-      <div class="grid grid-3">
-        <div class="card">
-          <h3 class="card-title">Observable by Default</h3>
-          <p class="card-text">Every model call, token, and latency metric is traced. You cannot improve what you cannot measure.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Cost-Aware Scaling</h3>
-          <p class="card-text">Autoscaling that balances performance with spend. Spot instances, caching, and model distillation keep budgets in check.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Fail Gracefully</h3>
-          <p class="card-text">Circuit breakers, fallback models, and retry logic ensure the system degrades smoothly instead of crashing hard.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Security First</h3>
-          <p class="card-text">Prompt injection guards, output filtering, and least-privilege access protect against adversarial inputs and data leaks.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Reproducibility</h3>
-          <p class="card-text">Pinned model versions, deterministic seeds, and immutable artifacts make every experiment and deployment repeatable.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Human in the Loop</h3>
-          <p class="card-text">Critical decisions route through human review. Automation handles volume; humans handle judgment.</p>
+          <div class="card">
+            <h4 class="card-title">6. Learn</h4>
+            <p class="card-text">Feedback loops feed performance data back into the system. Each cycle sharpens targeting, improves copy, and closes faster.</p>
+          </div>
         </div>
       </div>
     </section>
